@@ -14,26 +14,35 @@ let f7 p n = if p then 4 else if n = 4 then 5 else 0;;
 
 let f8 p q = if p then 0 else if q then 2 else 6;;
 
-let f9 = ;;
+let f9 p n = if p then n else 0;;
 
-let f10 = ;;
+let f10 f = if f 3 = 4 then 1 else 0;;
 
-let f11 = ;;
+let f11 f = if f 5 then 1 else 0;;
 
-let f12 = ;;
+let f12 p = if p true = 1 then 1 else 0;;
 
-let f13 = ;;
+let f13 p = if p 3 then true else false;; 
 
-let f14 = ;;
+let f14 p = if p true then 1 else 0;;
 
-let f15 = ;;
+let f15 n (a, b) = match (a, b) with
+  | (0, 0) -> -1 
+  | _ -> n 
+;;
 
-let f16 = ;;
+let fprova15 n x = if n <3 then (fst x) + n else (snd x) + n;;
 
-let f17 = ;;
+let f16 a b c = a + b + c;; 
 
-let f18 = ;;
+let fprova16 = fun x -> fun y -> fun z -> x + y + z;;
 
-let f19 = ;;
+let f17 f = if f 4 = 3 then f else f;;
 
-let f20 = ;;
+let f18 f = if f (fun x -> x+0) = 0 then 1 else 0;; (*f (f: int -> int) : int*)
+
+let fprova18 f = if f (fun x -> x+1) = 7 then 1 else 0;;
+
+let f19 f = if f 1 = 0 then (not) else (not);;
+
+let f20 f = if f 1 then fun true -> 1 else fun false -> 1;;
