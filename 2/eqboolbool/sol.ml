@@ -1,4 +1,5 @@
 let ( =? ) f g = let inutile = f true || g true in
+  (not inutile && inutile) ||
   (f true = g true) && (f false = g false)
 ;;
 
