@@ -41,6 +41,21 @@ let f9 = function
 ;;
 
 let f10 = function
-  | x when  -> 1
+  | x when 7 < x && x < 20 || 7 < x*2 && x*2 < 20 -> 1
+  | _ -> 0
+;;
+
+let f11 = function
+  | x when x < 50 && x mod 2 = 0 -> 1
+  | _ -> 0
+;;
+
+let f12 = function
+  | z when z mod 2 = 0 && 0 < z && z < 50 -> 1
+  | _ -> 0
+;;
+
+let f13 = function
+  | z when z mod 2 = 0 && 0 < z && z < 50 -> 1
   | _ -> 0
 ;;
